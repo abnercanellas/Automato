@@ -91,6 +91,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MVVM\ViewModel\HomeViewModel.cs" />
     <Compile Include="MVVM\ViewModel\MainModel.cs" />
     <Compile Include="MVVM\View\HomeView.xaml.cs">
       <DependentUpon>HomeView.xaml</DependentUpon>
@@ -129,6 +130,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\inpe_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="inpe_logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

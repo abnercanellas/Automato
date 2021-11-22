@@ -39,5 +39,13 @@ namespace Automato
         {
             WindowState = WindowState == WindowState.Normal ? WindowState.Minimized : WindowState;
         }
+
+        private void MoveWindowHandler(object sender, MouseButtonEventArgs e)
+        {
+            if(e.LeftButton == MouseButtonState.Pressed)
+            {
+                DragMove();
+            }
+        }
     }
 }

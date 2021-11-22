@@ -5,16 +5,100 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Automato.MVVM.View"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="550" d:DesignWidth="700">
     <StackPanel>
-        <TextBlock Text="discover"
-                   Foreground="White"
+        <StackPanel.Resources>
+            <Style TargetType="{x:Type Border}">
+                <Setter Property="Margin" Value="20,0,0,0"/>
+                <Setter Property="Padding" Value="10"/>
+            </Style>
+        </StackPanel.Resources>
+        <TextBlock Text="Processos Padrões"
+                   Foreground="CornflowerBlue"
                    FontSize="28"
                    HorizontalAlignment="Left"
-                   Margin="0,0,0,20"/>
+                   Margin="20"/>
 
         <StackPanel Orientation="Horizontal">
-            
+            <Border Width="200"
+                    Height="100">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#5bc3ff" Offset="0.0"/>
+                        <GradientStop Color="#FF1D26B9" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,200,100">
+                    </RectangleGeometry>
+                </Border.Clip>
+
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Text="IP de Teste &#x0a; Ativado" 
+                                   Foreground="White"
+                                   FontSize="20"/>
+                        <TextBlock Text="algum texto"
+                                   Foreground="White"
+                                   FontSize="15"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+            <Border Width="200"
+                    Height="100">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#5bc3ff" Offset="0.0"/>
+                        <GradientStop Color="#FF1D26B9" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,200,100">
+                    </RectangleGeometry>
+                </Border.Clip>
+
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Text="DHCP &#x0a; Desativado" 
+                                   Foreground="White"
+                                   FontSize="20"/>
+                        <TextBlock Text="algum texto"
+                                   Foreground="White"
+                                   FontSize="15"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+            <Border Width="200"
+                    Height="100">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#5bc3ff" Offset="0.0"/>
+                        <GradientStop Color="#FF1D26B9" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,200,100">
+                    </RectangleGeometry>
+                </Border.Clip>
+
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Text="WSUS&#x0a; Ativado" 
+                                   Foreground="White"
+                                   FontSize="20"/>
+                        <TextBlock Text="algum texto"
+                                   Foreground="White"
+                                   FontSize="15"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
         </StackPanel>
+        
     </StackPanel>
 </UserControl>
